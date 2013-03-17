@@ -42,11 +42,15 @@ namespace rbShader
 #endif
 
 #if defined( GRAPHICS_SHADER_CPP )
-	// Shader.available?()
-	// Shader.is_available?()
-	// Shader.is_available()
-	// Shader.isAvailable()
+	// Shader.available?
+	// Shader.is_available?
+	// Shader.is_available
+	// Shader.isAvailable
 	static VALUE IsAvailable( VALUE aSelf );
+
+	// Shader.bind
+	// Shader.bind(shader)
+	static VALUE Bind( int argc, VALUE* args, VALUE aSelf );
 
     // Shader#initialize
 	// Shader#initialize(vertex_filename, fragment_filename)
@@ -98,9 +102,6 @@ namespace rbShader
 	// Shader#[]=(name, current_texture)
 	static VALUE SetParameter( int argc, VALUE* args, VALUE aSelf );
 	
-	// Shader#bind()
-	static VALUE Bind( VALUE aSelf );
-	
     // Shader#marshal_dump
     static VALUE MarshalDump( VALUE aSelf );
 
@@ -110,9 +111,6 @@ namespace rbShader
     // Shader#inspect
     // Shader#to_s
     static VALUE Inspect( VALUE aSelf );
-
-    // Shader#memory_usage
-    static VALUE GetMemoryUsage( VALUE aSelf );
 #endif
 }
 
