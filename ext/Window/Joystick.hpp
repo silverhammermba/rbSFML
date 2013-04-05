@@ -23,12 +23,11 @@
 #define WINDOW_JOYSTICK_HPP
 
 #include <ruby.h>
-#include <rbSFML.hpp>
-#include <System/SFML.hpp>
-#include <System/Vector2.hpp>
-#include <Window/Window.hpp>
 
-#include <SFML/Window/Mouse.hpp>
+#include "../rbSFML.hpp"
+#include "../System/SFML.hpp"
+
+#include <SFML/Window/Joystick.hpp>
 
 namespace rbJoystick
 {

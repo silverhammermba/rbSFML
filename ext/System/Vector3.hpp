@@ -23,8 +23,9 @@
 #define SYSTEM_VECTOR3_HPP
 
 #include <ruby.h>
-#include <rbSFML.hpp>
-#include <System/SFML.hpp>
+
+#include "../rbSFML.hpp"
+#include "SFML.hpp"
 
 #include <SFML/System/Vector3.hpp>
 
@@ -120,7 +121,7 @@ VALUE rbVector3::ToRuby( VALUE anOther )
     }
 
     if( rb_type( anOther ) == T_ARRAY )
-        return rb_class_new_instance( RARRAY_LEN( anOther ), RARRAY_PTR( anOther ),
+        return rb_class_new_instance( static_cast< int >( RARRAY_LEN( anOther ) ), RARRAY_PTR( anOther ),
                                       rbVector3::Class );
 
     rb_raise( rb_eTypeError, "can't convert %s into %s",

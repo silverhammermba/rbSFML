@@ -19,7 +19,7 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
-#include <Window.hpp>
+#include "../Window.hpp"
 
 #if !defined( RBSFML_SFML )
 #include <sstream>
@@ -51,6 +51,7 @@ void Init_window()
     rbContext::Init( SFML );
     rbContextSettings::Init( SFML );
     rbEvent::Init( SFML );
+    rbJoystick::Init( SFML );
     rbKeyboard::Init( SFML );
     rbMouse::Init( SFML );
     rbStyle::Init( SFML );

@@ -24,15 +24,15 @@
 
 #include <ruby.h>
 
-#include <rbSFML.hpp>
-
-#include <Window/Context.hpp>
-#include <Window/ContextSettings.hpp>
-#include <Window/Event.hpp>
-#include <Window/Keyboard.hpp>
-#include <Window/Mouse.hpp>
-#include <Window/Style.hpp>
-#include <Window/VideoMode.hpp>
-#include <Window/Window.hpp>
+#include "rbSFML.hpp"
+#include "Window/Context.hpp"
+#include "Window/ContextSettings.hpp"
+#include "Window/Event.hpp"
+#include "Window/Joystick.hpp"
+#include "Window/Keyboard.hpp"
+#include "Window/Mouse.hpp"
+#include "Window/Style.hpp"
+#include "Window/VideoMode.hpp"
+#include "Window/Window.hpp"
 
 #endif // WINDOW_HPP
